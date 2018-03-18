@@ -10,6 +10,7 @@ namespace Nums1To20
     {
         static void Main(string[] args)
         {
+//Writing numbers from 1 to 20 on a separate lines.
             Console.WriteLine(1);
             Console.WriteLine(2);
             Console.WriteLine(3);
