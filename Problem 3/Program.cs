@@ -6,10 +6,10 @@ namespace C_Problem_1._Choose_a_Drink
     {
         static void Main(string[] args)
         {
-            string profecion = Console.ReadLine();
+            string profecion = Console.ReadLine();  // read from console some word
 
-            switch (profecion)
-            {
+            switch (profecion)  //check what is profession 
+            {  // in different cases write in console relevant drink  
                 case "Athlete":
                     Console.WriteLine("Water");
                     break;
@@ -21,7 +21,7 @@ namespace C_Problem_1._Choose_a_Drink
                     Console.WriteLine("Beer");
                     break;
                
-                default:
+                default:  
                     Console.WriteLine("Tea");
                     break;
             }
