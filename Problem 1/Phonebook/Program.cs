@@ -8,28 +8,31 @@
     {
         public static void Main(string[] args)
         {
-            var command = Console.ReadLine().Split().ToList();
+
+// change name of token to token
+
+            var token= Console.ReadLine().Split().ToList();
 
             var phonebook = new Dictionary<string, string>();
 
-            while (command[0] != "END")
+            while (token[0] != "END")
             {
-                if (command[0] == "A" && command.Count > 2)
+                if (token[0] == "A" && token.Count > 2)
                 {
-                    phonebook[command[1]] = command[2];
+                    phonebook[token[1]] = token[2];
                 }
                 else
                 {
-                    if (phonebook.ContainsKey(command[1]))
+                    if (phonebook.ContainsKey(token[1]))
                     {
-                        Console.WriteLine("{0} -> {1}", command[1], phonebook[command[1]]);
+                        Console.WriteLine("{0} -> {1}", token[1], phonebook[token[1]]);
                     }
                     else
                     {
-                        Console.WriteLine("Contact {0} does not exist.", command[1]);
+                        Console.WriteLine("Contact {0} does not exist.", token[1]);
                     }
                 }
-                command = Console.ReadLine().Split().ToList();
+                token= Console.ReadLine().Split().ToList();
             }
         }
     }
