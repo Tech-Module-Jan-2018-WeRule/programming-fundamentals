@@ -7,4 +7,4 @@ Problem 4 -  Writing numbers from 1 to 20 on a separate lines
 
 Problem 1 - receives some info from the console about people and their phone numbers and print it. If info does not exist print message. 
 
-Problem 2 - print a figure of asterisks
+Problem 2 - recives size and print a figure of asterisks
