@@ -10,7 +10,7 @@
         {
 
             // change name of token to token
-            // We recieve from the console some info from the console about people and their phone numbers.
+            // We recieve from the console some info about people and their phone numbers.
 
             var token = Console.ReadLine().Split().ToList();
 
