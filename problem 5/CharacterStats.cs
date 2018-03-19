@@ -7,31 +7,32 @@ namespace Chracter_Stats
     {
         static void Main(string[] args)
         {
-
-            String name = Console.ReadLine();
+            //receive  name, current health, maximum health, current energy and maximum energy on separate lines
+            String characterName = Console.ReadLine();
             int health = int.Parse(Console.ReadLine());
-            int healthmax = int.Parse(Console.ReadLine());
+            int healthMax = int.Parse(Console.ReadLine());
             int energy = int.Parse(Console.ReadLine());
-            int energymax = int.Parse(Console.ReadLine()); ;
+            int energyMax = int.Parse(Console.ReadLine()); ;
 
-            Console.WriteLine("Name: " + name);
+            //displays information about a video game character
+            Console.WriteLine("Name: " + characterName);
             Console.Write("Health: ");
-            Console.Write(repaeatStr("|", health + 1));
-            Console.Write(repaeatStr(".", healthmax - health));
+            Console.Write(repeatStr("|", health + 1));
+            Console.Write(repeatStr(".", healthMax - health));
             Console.WriteLine("|");
             Console.Write("Energy: ");
-            Console.Write(repaeatStr("|", energy + 1));
-            Console.Write(repaeatStr(".", energymax - energy));
+            Console.Write(repeatStr("|", energy + 1));
+            Console.Write(repeatStr(".", energyMax - energy));
             Console.WriteLine("|");
         }
-        public static String repaeatStr(String text, int count)
+        public static String repeatStr(String text, int count)
         {
-            StringBuilder sb = new StringBuilder();
+            StringBuilder statBar = new StringBuilder();
             for (int i = 0; i < count; i++)
             {
-                sb.Append(text);
+                statBar.Append(text);
             }
-            return sb.ToString();
+            return statBar.ToString();
         }
     }
 }
