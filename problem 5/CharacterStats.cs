@@ -1,4 +1,5 @@
-﻿using System;
+﻿//CONFIRMED by stanchevv
+using System;
 using System.Text;
 
 namespace Chracter_Stats
